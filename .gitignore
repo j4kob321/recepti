@@ -1,0 +1,13 @@
+# Gradnja in odvisnosti
+target/
+node_modules/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Okolje in sistemske datoteke
+.env
+*.log
+.DS_Store

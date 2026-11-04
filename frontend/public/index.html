@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moji recepti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Moji recepti</h1>
+    <button class="primary" data-action="new-recipe">+ Nov recept</button>
+  </header>
+
+  <main>
+    <div id="message" class="message hidden"></div>
+
+    <!-- Iskanje in filtriranje -->
+    <div class="filters">
+      <input id="search" type="search" placeholder="Išči po naslovu ali sestavinah...">
+      <select id="max-time">
+        <option value="">Vsi časi priprave</option>
+        <option value="15">do 15 min</option>
+        <option value="30">do 30 min</option>
+        <option value="60">do 60 min</option>
+        <option value="120">do 120 min</option>
+      </select>
+      <button id="clear-filters" type="button">Počisti</button>
+    </div>
+    <p id="result-count" class="meta"></p>
+
+    <div id="recipe-list" class="grid"></div>
+  </main>
+
+  <!-- Obrazec za recept -->
+  <dialog id="recipe-dialog">
+    <form id="recipe-form">
+      <h2 id="recipe-dialog-title">Nov recept</h2>
+      <input type="hidden" id="recipe-id">
+
+      <label>Naslov
+        <input id="recipe-title" required>
+      </label>
+      <label>Opis
+        <textarea id="recipe-description" rows="2"></textarea>
+      </label>
+      <label>Sestavine
+        <textarea id="recipe-ingredients" rows="3"></textarea>
+      </label>
+      <label>Postopek
+        <textarea id="recipe-instructions" rows="4"></textarea>
+      </label>
+      <div class="row">
+        <label>Čas priprave (min)
+          <input id="recipe-time" type="number" min="1" value="30" required>
+        </label>
+        <label>Število porcij
+          <input id="recipe-servings" type="number" min="1" value="4" required>
+        </label>
+      </div>
+
+      <div class="dialog-actions">
+        <button type="button" data-action="close-dialog">Prekliči</button>
+        <button type="submit" class="primary">Shrani</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Podrobnosti recepta -->
+  <dialog id="detail-dialog">
+    <div id="detail-content"></div>
+    <div class="dialog-actions">
+      <button type="button" data-action="close-dialog">Zapri</button>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

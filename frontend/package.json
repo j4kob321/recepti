@@ -1,0 +1,12 @@
+{
+  "name": "recepti-frontend",
+  "version": "1.0.0",
+  "description": "Uporabniški vmesnik aplikacije z recepti",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

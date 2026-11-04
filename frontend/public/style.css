@@ -1,0 +1,69 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f6f4ef;
+  color: #222;
+}
+
+header {
+  background: #c2410c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+header h1 { margin: 0; font-size: 1.5rem; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
+
+button {
+  font: inherit;
+  padding: .45rem .9rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover { background: #eee; }
+button.primary { background: #c2410c; border-color: #c2410c; color: #fff; }
+button.primary:hover { background: #9a3412; }
+button.danger { color: #b91c1c; border-color: #fca5a5; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.toolbar h2 { margin: 0; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+.card { background: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.1); display: flex; flex-direction: column; gap: .4rem; }
+.card h3 { margin: .2rem 0; }
+.card p { margin: 0; }
+.meta { color: #666; font-size: .9rem; }
+.actions { display: flex; gap: .4rem; margin-top: auto; padding-top: .6rem; flex-wrap: wrap; }
+.empty { color: #666; }
+
+
+.message { padding: .7rem 1rem; border-radius: 8px; margin-bottom: 1rem; }
+.message.ok { background: #dcfce7; color: #166534; }
+.message.error { background: #fee2e2; color: #991b1b; }
+.hidden { display: none; }
+
+dialog { border: none; border-radius: 12px; padding: 1.5rem; width: min(560px, 92vw); box-shadow: 0 10px 40px rgba(0,0,0,.3); }
+dialog::backdrop { background: rgba(0,0,0,.4); }
+dialog h2 { margin-top: 0; }
+label { display: block; margin-bottom: .8rem; font-size: .9rem; font-weight: 600; }
+input, textarea, select { display: block; width: 100%; margin-top: .25rem; padding: .5rem; font: inherit; font-weight: 400; border: 1px solid #ccc; border-radius: 6px; }
+.row { display: flex; gap: 1rem; }
+.row label { flex: 1; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: .5rem; margin-top: 1rem; }
+
+.detail h2 { margin-bottom: .3rem; }
+.detail h4 { margin: 1rem 0 .2rem; }
+.detail p { margin: 0; white-space: pre-wrap; }
+
+.filters { display: flex; gap: .6rem; margin-bottom: .6rem; flex-wrap: wrap; }
+.filters input { flex: 1; min-width: 200px; margin-top: 0; }
+.filters select { width: auto; margin-top: 0; }
