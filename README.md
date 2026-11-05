@@ -37,9 +37,9 @@ Cilj projekta je preprosta, a popolna aplikacija za upravljanje zbirke receptov.
 | Backend | Spring Boot (Web, Data JPA, Validation) | 3.3.5 |
 | Backend | springdoc-openapi (Swagger UI) | 2.6.0 |
 | Backend | PostgreSQL JDBC gonilnik | verzija iz Spring Boot BOM |
-| Backend | Maven | 3.6.3 ali novejši |
+| Backend | Maven | 3.6.3 |
 | Baza | PostgreSQL (prek Docker Compose) | 16 |
-| Frontend | Node.js | 18 ali novejši (razvito z 22) |
+| Frontend | Node.js | 22 |
 | Frontend | Express | ^4.19.2 |
 | Frontend | HTML, CSS, JavaScript (brez ogrodja) | – |
 | Orodja | Docker / Docker Compose | – |
