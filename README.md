@@ -33,7 +33,7 @@ Cilj projekta je preprosta, a popolna aplikacija za upravljanje zbirke receptov.
 
 | Del | Tehnologija | Verzija |
 |---|---|---|
-| Backend | Java (JDK) | 17 |
+| Backend | Java (JDK) | 25 |
 | Backend | Spring Boot (Web, Data JPA, Validation) | 3.3.5 |
 | Backend | springdoc-openapi (Swagger UI) | 2.6.0 |
 | Backend | PostgreSQL JDBC gonilnik | verzija iz Spring Boot BOM |
